@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-image: url('../img/Header\ Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 457px;
+    color: #fff;
+}
+
+header .info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 94px auto;
+    width: 680px;
+    
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header button {
+    padding: 13px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+}
+
+#butao {
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    grid-area: main;
+    
+}
+
+section  {
+    
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 360px;
+    margin: 25px auto;
+}
+
+section #text {
+    margin-top: 26px;
+    
+}
+
+#text h2 {
+    line-height: 2rem;
+    width: 270px;
+    
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+footer {
+    grid-area: footer;
+    background-color: paleturquoise;
+}
