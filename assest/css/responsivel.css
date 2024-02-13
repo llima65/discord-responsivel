@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Estilos específicos para telas menores */
+
 @media screen and (max-width: 768px) {
     header {
         height: auto;
@@ -68,7 +68,7 @@ body {
     }
 
     #image {
-        width: 100%;
+        width: 400px;
         text-align: center;
     }
 }
